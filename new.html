@@ -19,7 +19,7 @@
 		    if (req.status >= 400) {
 		      onFail(event);
 		    } else {
-		      var json = this.responseText;
+		      var json = JSON.parse(this.responseText);
 		      callback(null, json);
 		    }
 		  }
