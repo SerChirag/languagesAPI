@@ -1,10 +1,10 @@
-f = open("hi.txt","r")
+f = open("ar.txt","r")
 naam = open("new.txt","w")
 a = ""
 b = f.readline()
 while(b):
     
-    g = b.split("\t")[2]
+    g = b.split(",")[0]
     p = g.split("(")[0]
     p = p.strip(" ")
     naam.write(p)
