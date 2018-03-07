@@ -19,7 +19,7 @@
 		    if (req.status >= 400) {
 		      onFail(event);
 		    } else {
-		      var json = JSON.parse(this.responseText);
+		      var json = this.responseText;
 		      callback(null, json);
 		    }
 		  }
@@ -29,7 +29,7 @@
 		  }
 		}
 
-		hitApi('https://serchirag.github.io/languagesAPI/en.json', function(error, data) {
+		hitApi('https://serchirag.github.io/languagesAPI/fr.json', function(error, data) {
 		  if (error) {
 		    console.log('there was an error', error);
 		  } else {
