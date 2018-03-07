@@ -1,9 +1,9 @@
-f = open("es.txt","r")
+f = open("cs.txt","r")
 naam = open("new.txt","w")
 a = ""
 b = f.readline()
 while(b):
-    g = b.split("-")[0]
+    g = b.split(" ")[0]
     p = g.strip(" ")
     naam.write(p)
     naam.write(",")
