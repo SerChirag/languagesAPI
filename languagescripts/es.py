@@ -1,12 +1,12 @@
-f = open("ar.txt","r")
+f = open("fr.txt","r")
 naam = open("new.txt","w")
 a = ""
 b = f.readline()
 while(b):
     
-    g = b.split(",")[0]
+    g = b.split(" ")[1]
     p = g.split("(")[0]
-    p = p.strip(" ")
+    p = p.strip("\n")
     naam.write(p)
     naam.write(",")
     naam.write("\n")
